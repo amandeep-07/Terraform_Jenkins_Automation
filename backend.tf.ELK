@@ -1,6 +1,6 @@
 terraform {
  backend "s3" {
- bucket = "dev-ec2-backend"
+ bucket = "backendaman"
  key = "ELK/terraform.tfstate"
  region = "ap-south-1"
  }
