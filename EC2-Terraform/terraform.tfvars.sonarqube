@@ -3,7 +3,7 @@ algorithm = "RSA"
 rsa_bits  = 4096
 key = "Sonarqube/Sonarqube"
 key_name= "Sonarqube"
-bucket_name= "dev-ec2-key-pairs"
+bucket_name= "amandeep07"
 
 #SECURITY GROUP
 sg-name= "Sonarqube-sg"
@@ -11,14 +11,14 @@ sg-name= "Sonarqube-sg"
 
 #EC2 INSTANCE
 #instance_count= 1 
-ami= "Enter you ami"
+ami= "ami-0f8ca728008ff5af4"
 instance_type= "t2.medium"
 tags = {
   Name = "Sonarqube"
 }
-root_block_device= 30
+root_block_device= 8
 
 #EBS VOLUME
 ebs_volume_type = "gp3"
-ebs_volume_size = 30
+ebs_volume_size = 5
 device_name= "/dev/sdh"
