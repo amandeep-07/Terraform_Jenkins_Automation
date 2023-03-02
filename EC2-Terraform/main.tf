@@ -82,7 +82,7 @@ resource "aws_ebs_volume" "example" {
   availability_zone = resource.aws_instance.ec2_instance[count.index].availability_zone
   type              = var.ebs_volume_type
   size              = var.ebs_volume_size
-  iops              = 300
+#  iops              = 300
   tags              = var.tags
   lifecycle {
     prevent_destroy = false
