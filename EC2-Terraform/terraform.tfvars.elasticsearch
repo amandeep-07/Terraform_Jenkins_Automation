@@ -3,7 +3,7 @@ algorithm = "RSA"
 rsa_bits  = 4096
 key = "Elasticsearch/Elasticsearch"
 key_name= "Elasticsearch"
-bucket_name= "dev-ec2-key-pairs"
+bucket_name= "amandeep07"
 
 #SECURITY GROUP
 sg-name= "Elasticsearch-sg"
@@ -11,15 +11,15 @@ sg-name= "Elasticsearch-sg"
 
 #EC2 INSTANCE
 #instance_count= 1 
-ami= "Enter your ami"
+ami= "ami-0f8ca728008ff5af4"
 instance_type= "t2.medium"
 tags = {
   Name = "Elasticsearch"
 }
-root_block_device= 30
+root_block_device= 8
 
 #EBS VOLUME
 ebs_volume_type = "gp2"
-ebs_volume_size = 100
+ebs_volume_size = 5
 #IOPS            = 300
 device_name= "/dev/sdh"
