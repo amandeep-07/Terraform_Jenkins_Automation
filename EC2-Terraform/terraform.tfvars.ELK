@@ -3,7 +3,7 @@ algorithm = "RSA"
 rsa_bits  = 4096
 key = "ELK/ELK"
 key_name= "ELK"
-bucket_name= "dev-ec2-key-pairs"
+bucket_name= "amandeep07"
 
 #SECURITY GROUP
 sg-name= "ELK-sg"
@@ -11,14 +11,14 @@ sg-name= "ELK-sg"
 
 #EC2 INSTANCE
 #instance_count= 1 
-ami= "Enter your ami"
-instance_type= "t4g.large"
+ami= "ami-0f8ca728008ff5af4"
+instance_type= "t2.medium"
 tags = {
   Name = "ELK"
 }
-root_block_device= 30
+root_block_device= 8
 
 #EBS VOLUME
 ebs_volume_type = "gp3"
-ebs_volume_size = 100
+ebs_volume_size = 5
 device_name= "/dev/sdh"
