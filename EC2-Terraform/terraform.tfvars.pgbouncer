@@ -1,0 +1,24 @@
+# KEY PAIR
+algorithm = "RSA"
+rsa_bits  = 4096
+key = "Pgbouncer/Pgbouncer"
+key_name= "Pgbouncer"
+bucket_name= "dev-ec2-key-pairs"
+
+#SECURITY GROUP
+sg-name= "Pgbouncer-sg"
+# cidr_blocks = "0.0.0.0/0"
+
+#EC2 INSTANCE
+#instance_count= 1 
+ami= "Enter you ami"
+instance_type= "t2.medium"
+tags = {
+  Name = "Pgbouncer"
+}
+root_block_device= 16
+
+#EBS VOLUME
+ebs_volume_type = "gp3"
+ebs_volume_size = 30
+device_name= "/dev/sdh"

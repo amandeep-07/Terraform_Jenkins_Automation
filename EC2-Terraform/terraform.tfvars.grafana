@@ -1,0 +1,24 @@
+# KEY PAIR
+algorithm = "RSA"
+rsa_bits  = 4096
+key = "Grafana/Grafana"
+key_name= "Grafana"
+bucket_name= "dev-ec2-key-pairs"
+
+#SECURITY GROUP
+sg-name= "Grafana-sg"
+# cidr_blocks = "0.0.0.0/0"
+
+#EC2 INSTANCE
+#instance_count= 1 
+ami= "Enter your ami"
+instance_type= "t4g.large"
+tags = {
+  Name = "Grafana"
+}
+root_block_device= 30
+
+#EBS VOLUME
+ebs_volume_type = "gp3"
+ebs_volume_size = 100
+device_name= "/dev/sdh"

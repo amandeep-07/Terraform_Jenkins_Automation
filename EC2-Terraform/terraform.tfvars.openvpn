@@ -1,0 +1,24 @@
+# KEY PAIR
+algorithm = "RSA"
+rsa_bits  = 4096
+key = "OpenVPN/OpenVPN"
+key_name= "OpenVPN"
+bucket_name= "dev-ec2-key-pairs"
+
+#SECURITY GROUP
+sg-name= "OpenVPN-sg"
+# cidr_blocks = "0.0.0.0/0"
+
+#EC2 INSTANCE
+#instance_count= 1 
+ami= "Enter you ami"
+instance_type= "t2.medium"
+tags = {
+  Name = "OpenVPN"
+}
+root_block_device= 16
+
+#EBS VOLUME
+ebs_volume_type = "gp3"
+ebs_volume_size = 30
+device_name= "/dev/sdh"

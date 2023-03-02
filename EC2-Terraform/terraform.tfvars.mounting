@@ -1,0 +1,24 @@
+# KEY PAIR
+algorithm = "RSA"
+rsa_bits  = 4096
+key = "Mounting/Mounting"
+key_name= "Mounting"
+bucket_name= "dev-ec2-key-pairs"
+
+#SECURITY GROUP
+sg-name= "Mounting-sg"
+# cidr_blocks = "0.0.0.0/0"
+
+#EC2 INSTANCE
+#instance_count= 1 
+ami= "Enter you ami"
+instance_type= "t2.medium"
+tags = {
+  Name = "Mounting"
+}
+root_block_device= 30
+
+#EBS VOLUME
+#ebs_volume_type = "gp3"
+#ebs_volume_size = 500
+#device_name= "/dev/sdh"

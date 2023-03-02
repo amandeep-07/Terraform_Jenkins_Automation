@@ -1,0 +1,24 @@
+# KEY PAIR
+algorithm = "RSA"
+rsa_bits  = 4096
+key = "ArangoDB/ArangoDB"
+key_name= "ArangoDB"
+bucket_name= "dev-ec2-key-pairs"
+
+#SECURITY GROUP
+sg-name= "ArangoDB-sg"
+# cidr_blocks = "0.0.0.0/0"
+
+#EC2 INSTANCE
+#instance_count= 1 
+ami= "Enter you ami"
+instance_type= "r5a.xlarge"
+tags = {
+  Name = "ArangoDB"
+}
+root_block_device= 60
+
+#EBS VOLUME
+ebs_volume_type = "gp3"
+ebs_volume_size = 500
+device_name= "/dev/sdh"
